@@ -1492,7 +1492,7 @@ button,
   border-radius: 0.375em;
   border: 0;
   box-shadow: inset 0 0 0 2px #01c0c7;
-  color: #01c0c7 !important;
+  color: rgb(1, 192, 199) !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1511,13 +1511,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(1, 192, 199, 0.05); }
+    background-color: rgb(1, 192, 199); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(1, 192, 199, 0.15); }
+    background-color: rgb(1, 192, 199); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -1638,7 +1638,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #01c0c7;
+        color: rgb(1, 192, 199);
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1769,6 +1769,21 @@ button,
       .posts article .image img {
         display: block;
         width: 100%; }
+    .posts article .consoleimage {
+      margin: 0 0 0 1em;
+      display: block;
+      max-width: 15%;
+      max-height: 15%; }
+      .posts article .consoleimage img {
+        -moz-transition: -moz-transform 0.2s ease;
+        -webkit-transition: -webkit-transform 0.2s ease;
+        -ms-transition: -ms-transform 0.2s ease;
+        transition: transform 0.2s ease; }
+        .posts article .consoleimage:hover img {
+        -moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);}
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
@@ -2323,3 +2338,59 @@ html{
   .projectLinks a img{
     width: 100px;
   }
+
+.consoleLinks{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;}
+  .consoleLinks a{
+    width: 40px;
+    border-bottom: 0em;
+  }
+  .consoleLinks a img{
+    width: 60px;
+  }
+  .consoleLinks ul{
+    margin-left: 10px;
+  }
+  .consoleLinks #XB1{
+    width: 80px;
+  }
+  .consoleLinks #PS4{
+    width: 65px;
+  }
+  .consoleLinks #SteamDeck{
+    width: 150px;
+  }
+  .consoleLinks #Steam{
+    width: 50px;
+  }
+  .consoleLinks #Epic{
+    width: 45px;
+  }
+
+#CatnessButton{
+    display: block;}
+    #CatnessButton img {
+      -moz-transition: -moz-transform 0.2s ease;
+      -webkit-transition: -webkit-transform 0.2s ease;
+      -ms-transition: -ms-transform 0.2s ease;
+      transition: transform 0.2s ease; }
+      #CatnessButton:hover img {
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);}
